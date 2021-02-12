@@ -1,0 +1,16 @@
+// ここからheader
+ .header{
+   height: 200px;
+   background-color: skyblue;
+ }
+
+ .container{
+   height: calc(100vh - 400px);
+ }
+
+
+// ここからfooter
+.footer{
+  height: 200px;
+  background-color: slateblue;
+}
