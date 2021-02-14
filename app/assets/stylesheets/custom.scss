@@ -45,8 +45,38 @@
 
 // ここからfooter
 .footer{
-  height: 150px;
+  height: 180px;
   background-color: slateblue;
+  padding-top: 15px;
+  margin: 0 auto;
+  // display: flex;
+  // text-align: center;
+  &-top{
+    display: flex;
+    &-title{
+      color: white;
+      font-size: 18px;
+    }
+    li{
+      list-style: none;
+    }
+    &-content{
+      color: white;
+      font-size: 12px;
+    }
+  }
+  &-top ul{
+    margin: 0 auto;
+  }
+  &-bottom{
+    margin: 0 auto;
+    text-align: center;
+    &-content{
+      margin-bottom: 10px;
+      color: white;
+      font-size: 12px;
+    }
+  }
 }
 
 // ここからform
