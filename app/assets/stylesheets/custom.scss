@@ -1,18 +1,51 @@
 // ここからheader
  .header{
-   height: 200px;
+   height: 100px;
    background-color: skyblue;
+   display: flex;
+   margin: 0 auto;
+   &-left{
+    width: 100px;
+    // background-color:blue;
+   }
+   &-title{
+    flex: 1;
+    margin-left: 80px;
+    }
+    &-title a{
+      text-decoration: none;
+    }
+   &-right{
+    width:400px;
+    line-height: 100px;
+    // background-color: palevioletred;
+    &-ul{
+      display: flex;
+      &-btn{
+        list-style: none;
+        font-size: 24px;
+        margin-left: 50px;
+      }
+      &-btn a{
+        text-decoration: none;
+      }
+    }
+   }
  }
 
  .container{
-   height: calc(100vh - 400px);
+  //  height: calc(100vh - 400px);
+   height: 100vh;
    text-align: center;
- }
-
+   background-image: image_url('haruao.jpg');
+   background-size: cover;
+   margin: 0 auto;
+   padding-top: 20px;
+  }
 
 // ここからfooter
 .footer{
-  height: 200px;
+  height: 150px;
   background-color: slateblue;
 }
 

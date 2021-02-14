@@ -1,3 +1,14 @@
 <header class="header">
-  header
+  <div class="header-left">
+    <%= image_tag('NW_055.jpg',alt:"logo",width:"100px") %>
+  </div>
+  <div class="header-title">
+    <h1><%= link_to "MY BLOG" ,root_path %></h1>
+  </div>
+  <div class="header-right">
+    <ul class="header-right-ul">
+      <li class="header-right-ul-btn"><%= link_to'新規登録', new_user_path %></li>
+      <li class="header-right-ul-btn"><%= link_to'ログイン', "#" %></li>
+    </ul>
+  </div>
 </header>
