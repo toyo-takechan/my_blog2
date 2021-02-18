@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       redirect_to @user  
     else
       render 'new'
-    end
+    end 
   end
 
   def show
@@ -23,9 +23,23 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      flash[:success]= "プロフィールを更新しました"
+      redirect_to @user
+    else
+      render 'edit'
+    end
   end
 
   def destroy
+    User.find(params[:id]).destroy
+    flash[:sucsess]= "ユーザーを消去しました。"
+    redirect_to users_url
   end
 
   private
