@@ -1,5 +1,9 @@
 <div class ="form">
   <h1 class="form-title">プロフィール更新ページ</h1>
+  <div class="form-gravatar">
+  <%= gravatar_for @user %>
+  <a href="https://gravatar.com/emails" target="_blank">change</a>
+  </div>
   <%= form_with(model: @user, local: true) do |f| %>
   <%= render'shared/error_messages'%>
     <%= f.label :name , class: "form_control"%>
@@ -13,3 +17,4 @@
     <%= f.submit"更新" ,class: "form_btn" %>
   <% end %>
 </div>
+
