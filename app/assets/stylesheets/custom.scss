@@ -16,7 +16,7 @@
       text-decoration: none;
     }
    &-right{
-    width:400px;
+    width:600px;
     line-height: 100px;
     // background-color: palevioletred;
     &-ul{
@@ -24,7 +24,7 @@
       &-btn{
         list-style: none;
         font-size: 24px;
-        margin-left: 50px;
+        margin-left: 60px;
       }
       &-btn a{
         text-decoration: none;
@@ -117,5 +117,17 @@
   &-gravatar{  
     text-align: left;
     // margin-right: 10px;
+  }
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    // border-bottom: 1px solid gray;
   }
 }
