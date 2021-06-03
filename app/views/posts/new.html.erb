@@ -1,2 +1,11 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<div class ="form">
+  <h1 class="form-title">投稿する</h1>
+  <%= form_with(model: @post, local: true) do |f| %>
+<%# 　　<%= render 'shared/error_messages', object: f.object %> 
+    <%= f.label :テキスト , class: "form_control"%>
+    <%= f.text_area :content, placeholder: "文章を投稿してください。" ,class: "form_content" %>
+    <%= f.label :画像 ,class: "form_control"%>
+    <%= f.text_area :content, class: "form_content", placeholder: "画像を投稿してください。" %>
+    <%= f.submit "投稿する" , class: "form_btn" %>
+  <% end %>
+</div>

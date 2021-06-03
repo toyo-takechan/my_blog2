@@ -1,5 +1,8 @@
 # README
 
+#現在は公開を停止しております。
+#学習のために作ったアプリです。
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

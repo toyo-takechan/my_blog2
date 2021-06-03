@@ -1,10 +1,11 @@
-<% if @user.errors.any? %>
+<%# <% if @user.errors.any? %> 
+<% if object.errors.any? %>
 <div class="#">
    <%# フォーム入力で <%= pluralize(@user.errors.count, "errors") %> 
-   フォーム入力で <%= @user.errors.count %>のエラー箇所がございます。
+   フォーム入力で <%= object.errors.count %>のエラー箇所がございます。
 </div>
 <ul>
-<% @user.errors.full_messages.each do |msg| %>
+<% object.errors.full_messages.each do |msg| %>
 <li><%= msg %></li>
 <% end %>
 </ul>

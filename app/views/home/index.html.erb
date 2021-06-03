@@ -1,1 +1,12 @@
-<h1><%= 'ようこそ　MY BlOGへ' %></h1>
+<% if logged_in? %>
+  <h1><%= 'ようこそ　MY BlOGへ' %></h1>
+<%= @post.id %>
+  <%= link_to gravatar_for(@post.user, size: 50), @post.user %>
+  <span class="user"><%= link_to @post.user.name, @post.user %></span>
+  <span class="content"><%= @post.content %></span>
+  
+</li>
+<% else %>
+  <h1><%= 'ようこそ　MY BlOGへ' %></h1>
+<% end %>
+ 
